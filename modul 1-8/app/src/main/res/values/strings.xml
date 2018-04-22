@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Acong Canteen</string>
+    <string-array name="metode_pembayaran">
+        <item>Bayar di Tempat</item>
+        <item>Hutang</item>
+        <item>Nyicil</item>
+        <item>Transfer</item>
+        <item>E-Banking</item>
+    </string-array>
+</resources>
