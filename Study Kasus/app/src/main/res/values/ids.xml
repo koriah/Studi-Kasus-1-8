@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="list_avatar" type="id" />
+    <item name="list_title" type="id" />
+    <item name="list_desc" type="id" />
+    <item name="tile_picture" type="id" />
+    <item name="tile_title" type="id" />
+    <item name="collapsing_toolbar" type="id" />
+</resources>

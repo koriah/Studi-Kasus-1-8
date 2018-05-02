@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="places">
+        <item>Pindang Gombyang</item>
+        <item>Nasi Lengkoh</item>
+        <item>Rumbah</item>
+        <item>Karedok</item>
+        <item>Pedesan Entog</item>
+    </string-array>
+    <string-array name="place_desc">
+        <item>Pindang Gombyang</item>
+        <item>Nasi Lengkoh</item>
+        <item>Rumbah</item>
+        <item>Karedok</item>
+        <item>Pedesan Entog</item>
+    </string-array>
+
+    <string-array name="place_details">
+        <item>
+            b
+        </item>
+        <item>
+            c
+        </item>
+        <item>
+            d
+        </item>
+        <item>
+            e
+        </item>
+        <item>
+            f
+        </item>
+        <item>
+            g
+        </item>
+        <item>
+            h
+        </item>
+        <item>
+            i
+        </item>
+    </string-array>
+
+    <string-array name="place_locations">
+        <item>AC</item>
+        <item>AC merk</item>
+        <item>AC merk2</item>
+        <item>Elektronik</item>
+        <item>Merk AC</item>
+        <item>AC</item>
+    </string-array>
+
+    <array name="place_avator">
+        <item>@drawable/b_avator</item>
+        <item>@drawable/c_avator</item>
+        <item>@drawable/d_avator</item>
+        <item>@drawable/e_avator</item>
+        <item>@drawable/f_avator</item>
+    </array>
+    <array name="places_picture">
+    <item>@drawable/b</item>
+    <item>@drawable/c</item>
+    <item>@drawable/d</item>
+    <item>@drawable/e</item>
+    <item>@drawable/f</item>
+    </array>
+</resources>

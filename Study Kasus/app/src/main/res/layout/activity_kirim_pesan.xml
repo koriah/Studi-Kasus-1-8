@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.koriah.kasus_8.KirimPesan"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout
+
+    android:id="@+id/linearLayout"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <TextView
+        android:layout_margin="16dp"
+        android:id="@+id/teks5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nama Pemesan :"
+        android:textColor="#000000"/>
+
+    <TextView
+        android:layout_margin="16dp"
+        android:id="@+id/teks6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Makanan            :"
+        android:textColor="#000000"/>
+
+    <TextView
+        android:layout_margin="16dp"
+        android:id="@+id/teks7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Minuman            :"
+        android:textColor="#000000"/>
+
+    <TextView
+        android:layout_margin="16dp"
+        android:id="@+id/teks8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tanggal               :"
+        android:textColor="#000000"/>
+
+    <TextView
+        android:layout_margin="16dp"
+        android:id="@+id/teks9"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Waktu                  :"
+        android:textColor="#000000"/>
+
+    <TextView
+        android:layout_margin="16dp"
+        android:id="@+id/teks10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tempat                :"
+        android:textColor="#000000"/>
+
+    <Button
+        android:id="@+id/btn7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="Tutup"
+        android:onClick="onClick"
+        android:background="@color/colorAccent"/>
+
+</LinearLayout>
+</ScrollView>
