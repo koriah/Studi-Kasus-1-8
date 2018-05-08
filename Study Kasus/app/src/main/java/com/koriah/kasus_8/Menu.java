@@ -13,10 +13,20 @@ public class Menu extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu);
         ImageView menu = (ImageView) findViewById(R.id.menu);
+        ImageView order = (ImageView) findViewById(R.id.order);
+
         menu.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(Menu.this, ItemActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        order.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Menu. this, ListMenuMakanan.class);
                 startActivity(intent);
             }
         });

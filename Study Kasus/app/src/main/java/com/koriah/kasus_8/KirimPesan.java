@@ -1,16 +1,11 @@
 package com.koriah.kasus_8;
 
 import android.content.Intent;
-import android.os.Handler;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
-import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
 import android.widget.Button;
-import android.widget.Spinner;
 import android.widget.TextView;
-import android.widget.Toast;
 
 public class KirimPesan extends AppCompatActivity {
 
@@ -39,7 +34,8 @@ public class KirimPesan extends AppCompatActivity {
         tutup.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                moveTaskToBack(true);
+                Intent intent = new Intent(KirimPesan. this, Menu.class);
+                startActivity(intent);
             }
         });
     }

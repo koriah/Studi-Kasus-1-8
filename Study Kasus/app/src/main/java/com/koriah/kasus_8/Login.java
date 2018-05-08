@@ -25,7 +25,7 @@ public class Login extends AppCompatActivity {
     private EditText editTextEmail;
     private EditText editTextPassword;
     private Context context;
-    private AppCompatButton buttonLogin;
+    private AppCompatButton buttonLogin, btnregis;
     private ProgressDialog progressDialog;
 
     @Override
@@ -38,6 +38,7 @@ public class Login extends AppCompatActivity {
         editTextEmail = (EditText) findViewById(R.id.editTextEmail);
         editTextPassword = (EditText) findViewById(R.id.editTextPassword);
         buttonLogin = (AppCompatButton) findViewById(R.id.buttonLogin);
+        btnregis = (AppCompatButton) findViewById(R.id.btnregis);
 
         buttonLogin.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -45,8 +46,14 @@ public class Login extends AppCompatActivity {
                 login();
             }
         });
-
-
+        btnregis.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Login. this, RegisterActivity.class);
+                startActivity(intent);
+                finish();
+            }
+        });
     }
 
     private void login() {
@@ -54,7 +61,7 @@ public class Login extends AppCompatActivity {
         final String password = editTextPassword.getText().toString().trim();
         progressDialog.setMessage("Login Progress");
         showDialog();
-        StringRequest stringRequest = new StringRequest(Request.Method.POST, Server.LOGIN_URL,
+        StringRequest stringRequest = new StringRequest(Request.Method.POST, Server.URL + "login.php",
 
                 new Response.Listener<String>() {
                     @Override
