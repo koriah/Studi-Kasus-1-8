@@ -6,6 +6,16 @@
         <item>Rumbah</item>
         <item>Karedok</item>
         <item>Pedesan Entog</item>
+        <item>Ikan Buntal Goreng</item>
+        <item>Telur Dadar</item>
+        <item>Nasi</item>
+        <item>Sayur Asem</item>
+        <item>Sayur Lodeh</item>
+        <item>Sop</item>
+        <item>Ikan Bandeng Goreng</item>
+        <item>Tumis Kangkung</item>
+        <item>Telur Ceplok</item>
+
     </string-array>
     <string-array name="place_desc">
         <item>Pindang Gombyang</item>
@@ -13,42 +23,69 @@
         <item>Rumbah</item>
         <item>Karedok</item>
         <item>Pedesan Entog</item>
+        <item>Ikan Buntal Goreng</item>
+        <item>Telur Dadar</item>
+        <item>Nasi</item>
+        <item>Sayur Asem</item>
+        <item>Sayur Lodeh</item>
+        <item>Sop</item>
+        <item>Ikan Bandeng Goreng</item>
+        <item>Tumis Kangkung</item>
+        <item>Telur Ceplok</item>
+
     </string-array>
 
     <string-array name="place_details">
         <item>
-            b
+            Makanan ini terbuat dari kepala ikan laut bernama Ikan Mayung,
+            tapi bisa diganti juga dengan kepala ikan laut lain yang besar-besar, seperti misalnya Ikan Kakap.
+            Nama panganannya adalah Pindang Gombyang, makanan ini adalah makanan khas dari Indramayu.
         </item>
         <item>
-            c
+            Sega lengko (nasi lengko dalam bahasa Indonesia) adalah makanan khas masyarakat pantai utara
+            (Cirebon, Indramayu, Brebes, Tegal dan sekitarnya). Makanan khas yang sederhana ini sarat akan
+            protein dan serat serta rendah kalori karena bahan-bahan yang digunakan adalah 100% non-hewani.
+            Bahan-bahannya antara lain: nasi putih (panas-panas lebih baik), tempe goreng, tahu goreng, mentimun (mentah segar, dicacah),
+            tauge (direbus), daun kucai (dipotong kecil-kecil), bawang goreng, bumbu kacang (seperti bumbu rujak, pedas atau tidak,
+            tergantung selera), dan kecap manis.
         </item>
         <item>
-            d
+            Rumbah adalah makanan khas daerah Indramayu yang terdiri dari sayuran yang sudah dimasak seperti kangkung, kacang panjang dan tauge, lalu disiram dengan sambal khusus. Rumbah mirip dengan gado-gado kalau di Jakarta atau pecel kalau di Jawa. Tapi rumbah yang berasal dari daerah Eretan Kulon Indramayu ini berbeda dengan rumbah dari daerah lainnya, karena rumbah ini dicampur dengan air petis atau air sisa masak ikan laut yang menggunakan gula merah.
         </item>
         <item>
-            e
+            Karedok atau keredok adalah salah satu makanan khas Sunda di Indonesia. Karedok dibuat dengan bahan-bahan sayuran mentah antara lain; mentimun, taoge, kol, kacang panjang, daun kemangi, dan terong. Sedangkan sausnya adalah bumbu kacang yang dibuat dari cabai merah, bawang putih, kencur, kacang tanah, air asam, gula jawa, garam, dan terasi.
         </item>
         <item>
-            f
+            Masakan Indonesia identik dengan rasanya yang pedas, salah satunya masakan yang berasal dari daerah Indramayu yang berbahan dasar entog. Entog adalah hewan unggas yang memiliki daging lebih tebal dibandingkan dengan bebek, selain itu entog juga memiliki kandungan kalori yang tinggi, protein dan karbohidrat yang sanggup memenuhi kebutuhan dari tubuh kita
+            .
         </item>
-        <item>
-            g
-        </item>
-        <item>
-            h
-        </item>
-        <item>
-            i
-        </item>
+        <item>Masakan Khas Indonesia</item>
+        <item>Masakan Khas Indonesia</item>
+        <item>Masakan Khas Indonesia</item>
+        <item>Masakan Khas Indonesia</item>
+        <item>Masakan Khas Indonesia</item>
+        <item>Masakan Khas Indonesia</item>
+        <item>Masakan Khas Indonesia</item>
+        <item>Masakan Khas Indonesia</item>
+        <item>Masakan Khas Indonesia</item>
+
     </string-array>
 
     <string-array name="place_locations">
-        <item>AC</item>
-        <item>AC merk</item>
-        <item>AC merk2</item>
-        <item>Elektronik</item>
-        <item>Merk AC</item>
-        <item>AC</item>
+        <item>Rp. 15.000</item>
+        <item>Rp. 5000</item>
+        <item>Rp. 5000</item>
+        <item>Rp. 5000</item>
+        <item>Rp. 10.000</item>
+        <item>Rp. 10.000</item>
+        <item>Rp. 10.000</item>
+        <item>Rp. 10.000</item>
+        <item>Rp. 10.000</item>
+        <item>Rp. 10.000</item>
+        <item>Rp. 10.000</item>
+        <item>Rp. 10.000</item>
+        <item>Rp. 10.000</item>
+        <item>Rp. 10.000</item>
     </string-array>
 
     <array name="place_avator">
@@ -57,12 +94,31 @@
         <item>@drawable/d_avator</item>
         <item>@drawable/e_avator</item>
         <item>@drawable/f_avator</item>
+        <item>@drawable/g_avator</item>
+        <item>@drawable/h_avator</item>
+        <item>@drawable/i_avator</item>
+        <item>@drawable/j_avator</item>
+        <item>@drawable/k_avator</item>
+        <item>@drawable/l_avator</item>
+        <item>@drawable/m_avator</item>
+        <item>@drawable/n_avator</item>
+        <item>@drawable/o_avator</item>
     </array>
     <array name="places_picture">
-    <item>@drawable/b</item>
-    <item>@drawable/c</item>
-    <item>@drawable/d</item>
-    <item>@drawable/e</item>
-    <item>@drawable/f</item>
+        <item>@drawable/b</item>
+        <item>@drawable/c</item>
+        <item>@drawable/d</item>
+        <item>@drawable/e</item>
+        <item>@drawable/f</item>
+        <item>@drawable/g</item>
+        <item>@drawable/h</item>
+        <item>@drawable/i</item>
+        <item>@drawable/j</item>
+        <item>@drawable/k</item>
+        <item>@drawable/l</item>
+        <item>@drawable/m</item>
+        <item>@drawable/n</item>
+        <item>@drawable/o</item>
+
     </array>
 </resources>

@@ -78,7 +78,7 @@ public class ItemActivity extends AppCompatActivity {
     private void setupVIewPager(ViewPager viewPager) {
         Adapter adapter = new Adapter(getSupportFragmentManager());
         adapter.addFragment(new ListActivity(), "Menu Makanan");
-        adapter.addFragment(new TileActivity(), "Menu Minuman");
+        adapter.addFragment(new TileActivity(), "Menu Makanan");
         viewPager.setAdapter(adapter);
     }
 

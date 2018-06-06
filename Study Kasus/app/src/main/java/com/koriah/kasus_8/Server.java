@@ -6,8 +6,8 @@ package com.koriah.kasus_8;
 
 public class Server {
 
-    public static final String URL = "http://192.168.43.68/course/api/";
-//    public static final String URL_REGIS = "http:// 192.168.2.5/course/api";
+    public static final String URL = "http://128.110.2.124/coursee/api/";
+    //    public static final String URL_REGIS = "http:// 192.168.2.5/course/api";
     public static final String KEY_EMAIL = "email";
     public static final String KEY_PASSWORD = "password";
 

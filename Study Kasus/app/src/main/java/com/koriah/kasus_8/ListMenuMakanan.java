@@ -2,12 +2,10 @@ package com.koriah.kasus_8;
 
 import android.app.ListActivity;
 import android.content.Intent;
-import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
-import android.widget.Toast;
 /**
  * Created by kori'ahtun on 4/11/2018.
  */
@@ -17,8 +15,11 @@ public class ListMenuMakanan extends ListActivity {
             "Sayur Asem",
             "Sayur Lodeh",
             "Sop",
+            "Pedesan Entog",
+            "Rumabah",
+            "Lotek",
+            "Pindang Gombyang",
             "Ikan Bandeng Goreng",
-            "Ikan Mujair Goreng",
             "Ikan Buntal Goreng",
             "Sirip Ikan Hiu",
             "Ayam Goreng",
@@ -27,8 +28,6 @@ public class ListMenuMakanan extends ListActivity {
             "Telur Dadar",
             "Telur Ceplok",
             "Tumis Kangkung",
-            "Oreg",
-            "Lengkoh"
     };
 
     @Override

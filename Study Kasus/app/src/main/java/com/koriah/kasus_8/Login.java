@@ -3,11 +3,13 @@ package com.koriah.kasus_8;
 import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.AppCompatButton;
 import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.android.volley.AuthFailureError;
@@ -22,11 +24,14 @@ import java.util.Map;
 
 
 public class Login extends AppCompatActivity {
-    private EditText editTextEmail;
-    private EditText editTextPassword;
-    private Context context;
-    private AppCompatButton buttonLogin, btnregis;
-    private ProgressDialog progressDialog;
+    EditText editTextEmail;
+    EditText editTextPassword;
+    Context context;
+    AppCompatButton buttonLogin;
+    Button linkweb;
+    TextView btnregis;
+    ProgressDialog progressDialog;
+    SharedActivity sharedActivity;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,11 +39,19 @@ public class Login extends AppCompatActivity {
         setContentView(R.layout.activity_login);
         context = Login.this;
 
+
         progressDialog = new ProgressDialog(context);
         editTextEmail = (EditText) findViewById(R.id.editTextEmail);
         editTextPassword = (EditText) findViewById(R.id.editTextPassword);
         buttonLogin = (AppCompatButton) findViewById(R.id.buttonLogin);
-        btnregis = (AppCompatButton) findViewById(R.id.btnregis);
+        btnregis = (TextView) findViewById(R.id.btnregis);
+
+        sharedActivity = new SharedActivity(this);
+
+        if (sharedActivity.getSessionStatus()){
+            startActivity(new Intent(Login.this, Menu.class));
+            finish();
+        }
 
         buttonLogin.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -46,6 +59,7 @@ public class Login extends AppCompatActivity {
                 login();
             }
         });
+
         btnregis.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -54,9 +68,19 @@ public class Login extends AppCompatActivity {
                 finish();
             }
         });
+
+        linkweb = (Button) findViewById(R.id.linkweb);
+        linkweb.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Login. this, WebActivity.class);
+                startActivity(intent);
+                finish();
+            }
+        });
     }
 
-    private void login() {
+    public void login() {
         final String email = editTextEmail.getText().toString().trim();
         final String password = editTextPassword.getText().toString().trim();
         progressDialog.setMessage("Login Progress");
@@ -68,7 +92,11 @@ public class Login extends AppCompatActivity {
                     public void onResponse(String response) {
                         if (response.contains(Server.LOGIN_SUCCESS)) {
                             hideDialog();
-                            gotoMenu();
+                            sharedActivity.saveBool(sharedActivity.SESSION_STATUS, true);
+                            Intent intent = new Intent(Login.this, Menu.class);
+                            startActivity(intent);
+                            finish();
+
                         } else {
                             hideDialog();
                             Toast.makeText(context, "Invalid Username dan Passowrd", Toast.LENGTH_LONG).show();
@@ -105,4 +133,5 @@ public class Login extends AppCompatActivity {
         if (progressDialog.isShowing())
             progressDialog.dismiss();
     }
+
 }

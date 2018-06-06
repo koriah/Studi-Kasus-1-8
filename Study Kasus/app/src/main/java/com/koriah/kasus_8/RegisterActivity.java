@@ -25,7 +25,7 @@ import java.util.Map;
 
 public class RegisterActivity extends AppCompatActivity {
     ProgressDialog progressDialog;
-    Button btnregis;
+    Button btnregis, btnlinklogin;
     EditText textemail, textpassword, textfirst, textlast;
     Intent intent;
 
@@ -60,6 +60,16 @@ public class RegisterActivity extends AppCompatActivity {
         textpassword = (EditText) findViewById(R.id.passregis);
         textlast = (EditText) findViewById(R.id.lastregis);
         textfirst = (EditText) findViewById(R.id.firstregis);
+        btnlinklogin = (Button) findViewById(R.id.btnlinklogin);
+
+        btnlinklogin.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(RegisterActivity. this, Login.class );
+                startActivity(intent);
+                finish();
+            }
+        });
 
         btnregis.setOnClickListener(new View.OnClickListener() {
             @Override

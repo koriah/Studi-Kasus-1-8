@@ -19,4 +19,16 @@
         <item>Transfer</item>
         <item>E-Banking</item>
     </string-array>
+
+    <string name="hint_email">Email</string>
+    <string name="hint_password">Password</string>
+    <string name="hint_firstname">First Name</string>
+    <string name="hint_lastname">Last Name</string>
+    <string name="hint_name">Nama Lengkap</string>
+    <string name="btn_login">Login</string>
+    <string name="btn_register">Daftar</string>
+    <string name="btn_link_to_register">Belum pernah mendaftar? Daftar sekarang.</string>
+    <string name="btn_link_to_login">Sudah registrasi? silahkan login disini.</string>
+    <string name="welcome">Welcome</string>
+    <string name="btn_logout">LOGOUT</string>
 </resources>
